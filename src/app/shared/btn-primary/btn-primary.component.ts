@@ -1,10 +1,10 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
-  selector: 'app-btn-primary',
+  selector: 'btn-primary',
   templateUrl: './btn-primary.component.html',
   styleUrls: ['./btn-primary.component.scss']
 })
 export class BtnPrimaryComponent {
-
+  @Input() text: string = '';
 }
